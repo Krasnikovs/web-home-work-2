@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Display modes</title>
+  <style>
+	a {
+		border:1px solid red;
+		width:90px;
+		height:90px;
+	}
+
+	#inlinedemo {display:inline;}
+	#blockdemo {display:block;}
+	#inlineblockdemo {display:inline-block;}
+	#nonedemo {display:none;}  
+  </style>
+</head>
+<body>
+<p>This is the default way how browsers render hyperlinks. The hyperlink is somewhere in the middle of text. <a id="inlinedemo" href="http://css-tricks.com/almanac/properties/d/display/#inline">This demonstrates the "inline" display</a>. After that, the paragraph continues.
+</p>
+
+<p>Now, the <code>A</code> element actually splits the containing <code>P</code> in three parts - the part before the hyperlink, the hyperlink itself and the remainder.
+<a id="blockdemo" href="http://css-tricks.com/almanac/properties/d/display/#block">This demonstrates the "block" display.</a> Well, this is the remainder of the paragraph.</p>
+
+<p>This needs some more text to demonstrate how "inline-block" works. Note that the hyperlink has a set width and height.
+    <a id="inlineblockdemo" href="http://css-tricks.com/almanac/properties/d/display/#inline-block">this demonstrates the display:inline-block</a>. Well, and then it goes on here.
+</p>
+
+<p>It is always weird demonstrating the <code>display:none</code>, as the demo object is not visible. There is actually a hyperlink inside the braces ( <a id="nonedemo" href="http://css-tricks.com/almanac/properties/d/display/#none"> This demonstrates the display:none</a> ).
+</p>
+</body>
+</html>

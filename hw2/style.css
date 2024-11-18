@@ -1,0 +1,79 @@
+/*Enter your name, last name, studentID number here*/
+/* Gustavs Krasnikovs, gk24018 */
+
+#header {
+    /* display: flex; */
+    position: static;
+    
+}
+
+header .header-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* width: 100%; */
+}
+
+.header-top {
+    display: inline-block;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.nav-bar li {
+    display: inline-block;
+  }
+  
+.nav-bar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .sub-menu {
+    position: relative;
+  }
+  
+  .sum-menu-item {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .has-sub-menu:hover .sum-menu-item {
+    display: block;
+  }
+
+  #discounts {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  .discount-ad{
+    padding: 100px;
+  }
+
+  #returns {
+    display: flex;
+  }

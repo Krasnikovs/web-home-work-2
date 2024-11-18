@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Positioning schemes</title>
+  <style>
+	p {border:1px solid red}
+	.first{
+	  position:static;
+	}
+	.second{
+	  position:relative;
+	  left:30px;
+	  bottom:10px
+	}
+	div {
+	  border:1px solid blue;
+	  height:100px;
+	  position:relative;
+	}
+	.third {
+	  width:70%;
+	  position:absolute;
+	  right:0px;
+	  bottom:0px;
+	  margin:0px;
+	}
+	.forth {
+	  background-color:yellow;
+	  position:fixed;
+	  bottom:50px;
+	  right:100px;
+	  margin:0px;
+	}  
+  </style>
+</head>
+<body>
+  <p class="first">The first paragraph with position:static.</p>
+  <p class="second">The second paragraph with position:relative.</p>
+  <div>
+    <p class="third">The third paragraph with position:absolute inside the div with position:relative.</p>
+  </div>
+  <p class="forth">The fourth paragraph.</p>
+  <p>Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page. Some text to make it possible to scroll the page.
+</p>
+    
+</body>
+</html>
