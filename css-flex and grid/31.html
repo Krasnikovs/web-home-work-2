@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid 5</title>
+  <style>
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: 1fr 2fr 1fr;
+	  justify-items: start;
+	  align-items: center;
+	}
+
+	.grid-item {
+	  border: 1px solid black;
+	}
+
+	.grid-item:first-child {
+	  justify-self: stretch;
+	}
+
+	.grid-item:nth-child(4) {
+	  align-self: start
+	}  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Grid item 1</div>
+    <div class="grid-item">Grid item 2</div>
+    <div class="grid-item">Grid item 3</div>  
+    <div class="grid-item">Grid item 4</div>  
+    <div class="grid-item">Grid item 5 is a long long long long long long long long long long long long long text</div>  
+    <div class="grid-item">Grid item 6</div>  
+    <div class="grid-item">Grid item 7</div>  
+    <div class="grid-item">Grid item 8</div>  
+  </div>
+</body>
+</html>

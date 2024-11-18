@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid 1</title>
+  <style>
+	.grid-container {
+	  display: grid;
+	  
+	  /* constant number, width and height */
+	  grid-template-columns: 100px 150px 100px;
+	  grid-template-rows: 100px 150px 100px;
+	  
+	  /* using auto */
+	  /*grid-template-columns: 100px auto auto;
+	  grid-template-rows: 100px auto 100px;*/
+
+	  /* using fractions */
+	  /*grid-template-columns: 1fr 2fr 1fr;
+	  grid-template-rows: 1fr 2fr 1fr;*/
+	  
+	  /* using repeat and max-content*/
+	  /*grid-template-columns: repeat(2, 1fr 2fr);
+	  grid-template-rows: 100px max-content;*/
+	  
+	  /* using minmax */
+	  /*grid-template-columns: 1fr minmax(150px, 1fr) 1fr;*/
+	  
+	  /* using auto-fill/auto-fit */
+	  /*background-color: yellow;
+	  grid-template-columns: repeat(auto-fill/*auto-fit*/, minmax(75px, 1fr));*/
+	}
+
+	.grid-item {
+	  border: 1px solid black;
+	}  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Grid item 1</div>
+    <div class="grid-item">Grid item 2</div>
+    <div class="grid-item">Grid item 3</div>  
+    <div class="grid-item">Grid item 4</div>  
+    <div class="grid-item">Grid item 5 is a long long long long long long long long long long long long long text</div>  
+    <div class="grid-item">Grid item 6</div>  
+    <div class="grid-item">Grid item 7</div>  
+    <div class="grid-item">Grid item 8</div>  
+  </div>
+</body>
+</html>

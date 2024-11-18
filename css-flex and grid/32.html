@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid 6</title>
+  <style>
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [forth] 1fr [fifth];
+	  grid-template-rows: repeat(3, minmax(80px, max-content));
+	}
+
+	.grid-item {
+	  border: 1px solid black;
+	}
+
+	.box1 {
+	  grid-column-start: 1;
+	  grid-column-end: 3;
+	}
+
+	.box2 {
+	  grid-row-start: 1;
+	  grid-row-end: 3;
+	  grid-column: 3;
+	}
+
+	.box4 {
+	  grid-column: first / third;
+	}
+
+	.box6 {
+	  grid-column: 4;
+	  grid-row: 2;
+	}
+
+	.box5 {
+	  grid-row: 3/5;
+	}
+
+	.box9 {
+	  grid-row-start: 3;
+	  grid-row-end: span 2;
+	  grid-column-start: 4;
+	  background-color: rgba(132, 132, 132, 0.5)
+	}
+
+	.box11 {
+	  grid-column: 3/5;
+	  grid-row: 4/5;
+	  background-color: rgba(255, 0, 0, 0.5)
+	}
+  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item box1">Grid item 1</div>
+    <div class="grid-item box2">Grid item 2</div>
+    <div class="grid-item box3">Grid item 3</div>  
+    <div class="grid-item box4">Grid item 4</div>  
+    <div class="grid-item box5">Grid item 5 is a long long long long long long long long long long long long long text</div>  
+    <div class="grid-item box6">Grid item 6</div>  
+    <div class="grid-item box7">Grid item 7</div>  
+    <div class="grid-item box8">Grid item 8</div>  
+    <div class="grid-item box9">Grid item 9</div>  
+    <div class="grid-item box10">Grid item 10  is a long long long long long long long long long long long long long text</div>  
+    <div class="grid-item box11">Grid item 11</div>  
+  </div>
+</body>
+</html>

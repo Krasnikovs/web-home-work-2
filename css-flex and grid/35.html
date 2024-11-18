@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid 9</title>
+  <style>
+	.box1 {
+	  grid-area: header;
+	  background-color: yellow;
+	  font-weight: bold;
+	  font-size: 1.2em;  
+	}
+
+	.box2 {
+	  grid-area: aside-1;
+	  background-color: orange;
+	  font-size: 0.8em;
+	}
+
+	.box3 {
+	  grid-area: aside-2;
+	  background-color: red;
+	  font-size: 0.8em;
+	}
+
+	.box4 {
+	  grid-area: main;
+	  background-color: blue;
+	}
+
+	.box4 > * {
+	  text-align: left;
+	}
+
+	.box5 {
+	  grid-area: footer;
+	  background-color: green;
+	}
+
+	.grid-container {
+	  display: grid;
+	  grid-template-areas: 
+		"header header header"
+		"aside-1 main aside-2"
+		"footer footer footer";
+	  
+	  /* it is possible to omit cells */
+	  /*grid-template-columns: 1fr 3fr 1fr 1fr;
+	  grid-template-rows: auto;
+	  grid-template-areas: 
+		"header header header header"
+		"aside-1 main . aside-2"
+		"footer footer footer footer";*/
+	  
+	}
+
+	.grid-item {
+	  border: 1px solid black;
+	  text-align: center;
+	}
+  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item box1">Header</div>
+    <div class="grid-item box2">Aside 1</div>
+    <div class="grid-item box3">Aside 2</div>  
+    <div class="grid-item box4">
+      <h4>Main</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dignissim risus, et semper nisl pretium et. Sed sem justo, mattis eget elementum at, eleifend sed ex. Vestibulum ac odio at lorem molestie tincidunt. Nullam vulputate porta lacus porttitor cursus.</p>
+    </div>  
+    <div class="grid-item box5">Footer</div>  
+  </div>
+</body>
+</html>

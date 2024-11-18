@@ -12,7 +12,7 @@ header .header-top {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:#fcfaf7;
     /* width: 100%; */
 }
 
@@ -21,59 +21,96 @@ header .header-top {
 }
 
 .nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fcfaf7;
+}
+
 .nav-bar li {
-    display: inline-block;
-  }
-  
+	display: inline-block;
+}
+
 .nav-bar li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    justify-content: space-around;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	justify-content: space-around;
+}
 
-  .sub-menu {
-    position: relative;
-  }
-  
-  .sum-menu-item {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  
-  .has-sub-menu:hover .sum-menu-item {
-    display: block;
-  }
+li a:hover {
+	background-color: #635243;	
+}
 
-  #discounts {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
+.sub-menu {
+	position: relative;
+}
 
-  .discount-ad{
-    padding: 100px;
-  }
+.sum-menu-item {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
 
-  #returns {
-    display: flex;
-  }
+.has-sub-menu:hover .sum-menu-item {
+	display: block;
+}
+
+#discounts {
+	display: inline-flex;
+	/* width:100px;
+	float:left; */
+}
+
+.section-col img {
+	/* width: 50%; */
+}
+
+.section-col .discount-ad {
+	display: flex;
+	/* width: 50%; */
+	justify-content: center;
+}
+/* 
+.discount-ad{
+	
+}
+
+.discount-ad p {
+
+} */
+
+#returns {
+	display: flex;
+	justify-content: center;
+}
+
+#products {
+	
+
+}
+
+#products .product-card {
+	display: inline-flex;
+	flex-flow: row wrap;
+	/* max-width: 150px; */
+	/* justify-content: space-evenly; */
+	min-width: 10%;
+	max-width: 17%;
+}
+
+/* .product-list .product-card {
+	flex: 1 0 0 0 0 0;
+} */
+
+.product-card img {
+	flex: 1 0 0 0 0 0;
+	width: 100%;
+}

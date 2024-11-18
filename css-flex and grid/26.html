@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Flex 5</title>
+  <style>
+	.flex-container {
+	  display: flex;  
+	  flex-flow: row wrap;
+	  text-align: center;
+	  min-width: 220px;
+	}
+
+	.flex-container > * {
+	  padding: 10px;
+	  flex: 1 100%; /*flex-grow and flex-basis*/
+	}
+
+	.flex-container header {
+	  font-weight: bold;
+	  font-size: 1.2em;
+	  background-color: yellow;
+	}
+
+	.flex-container main {
+	  text-align: left;
+	  background-color: blue;
+	  flex: 3 0 200px; /*flex-grow, flex-shrink and flex-basis*/
+	}
+
+	.flex-container aside {
+	  font-size: 0.8em;
+	  flex: 1 0 0; /*flex-grow, flex-shrink and flex-basis*/
+	}
+
+	.flex-container .aside-1 {
+	  background-color: orange;
+	}
+
+	.aside-2 {
+	  background-color: red;
+	}
+
+	footer {
+	  background-color: green;
+	}
+  
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <header>Header</header>
+    <aside class="aside-1">Aside 1</aside>
+    <main>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    </main>
+    <aside class="aside-2">Aside 2</aside>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
